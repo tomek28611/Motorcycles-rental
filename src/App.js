@@ -5,6 +5,7 @@ import ImageSlider from "./components/Slider";
 import Booking from "./components/Booking";
 import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
+import Book from "./components/Book";
 
 
 function App() {

@@ -11,15 +11,15 @@ const ImageSlider = () => {
     },
     {
       url: 'https://news.trenddetail.com/content/uploads/2022/09/24/2539f5a3bf.jpg',
-      title: 'Sushi',
+      title: 'pcx',
     },
     {
       url: 'https://www.ananmoney.com/wp-content/uploads/2022/08/Yamaha-XMAX-2023-Black.png',
-      title: 'Pasta',
+      title: 'xmax',
     },
     {
       url: 'https://images.91wheels.com//assets/b_images/main/models/profile/profile1661764705.jpg',
-      title: 'Salmon',
+      title: 'harley',
     },
   ];
 
@@ -42,8 +42,8 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className='max-w-[1400px] h-[600px] w-full m-auto py-16 px-4 relative group'>
-        <div className='text bold font-bold text-5xl md:text-7xl drop-shadow-2xl text-center p-4' >Motorbikes</div>
+    <div className='w-[600px] sm:h-[600px] md:w-[800px] m-auto py-16 px-4 relative group'>
+        <div className='text bold font-bold text-5xl md:text-7xl drop-shadow-2xl text-center p-4'>Motorbikes</div>
       <div
         className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
