@@ -24,11 +24,11 @@ const Navbar = () => {
         }
       >
         <ul className='flex flex-col fixed w-full h-full items-center justify-center'>
-          <li className='font-bold text-3xl p-8'>Home</li>
-          <li className='font-bold text-3xl p-8'>Our Services</li>
-          <li className='font-bold text-3xl p-8'>Bikes</li>
-          <li className='font-bold text-3xl p-8'>Booking</li>
-          <li className='font-bold text-3xl p-8'>Reviews</li>
+          <li className='font-bold text-3xl p-8  cursor-pointer hover:text-gray-500'>Home</li>
+          <li className='font-bold text-3xl p-8 cursor-pointer hover:text-gray-500'>Our Services</li>
+          <li className='font-bold text-3xl p-8 cursor-pointer hover:text-gray-500'>Bikes</li>
+          <li className='font-bold text-3xl p-8  cursor-pointer hover:text-gray-500'>Booking</li>
+          <li className='font-bold text-3xl p-8  cursor-pointer hover:text-gray-500'>Reviews</li>
         </ul>
       </div>
     </div>
