@@ -42,7 +42,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className='sm:w-[300px] sm:h-[300px] md:w-[600px] md:h-[600px] m-auto py-16 px-4 relative group'>
+    <div className='w-[300px] h-[300px] md:w-[600px] md:h-[600px] m-auto py-16 px-4 relative group'>
         <div className='text bold font-bold text-5xl md:text-7xl drop-shadow-2xl text-center p-4'>Motorbikes</div>
       <div
         className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
