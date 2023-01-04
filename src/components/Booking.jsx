@@ -1,18 +1,35 @@
-import React from 'react';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Booking = () => {
+
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_e5jqq2u', 'template_svrlb0k', form.current, 'ZddD9vteovHh0v3nR')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  };
+
   return (
-    <div class="text-2xl mt-8 p-12 w-full h-full md:w-120 md:max-w-full mx-auto">
-      <div class="p-6 border border-gray-300 sm:rounded-md">
-        <form method="POST" action="">
+    <div class="text-2xl mt-12 p-12 w-full h-full md:w-120 md:max-w-full mx-auto">
+      <span className='text-xl md:text-5xl font-semibold text-gray-500 ml-8'>Book your motorbike</span>
+      <div class="mt-4 p-6 border border-gray-300 sm:rounded-md">
+        <form ref={form} onSubmit={sendEmail} action="">
           <label class="block mb-6">
             <span class="text-gray-700">Your name</span>
             <input
               name="name"
               type="text"
-              class="
+              className="
             block
-            w-full
+            w-full          
             mt-1
             border-gray-300
             rounded-md
@@ -22,7 +39,7 @@ const Booking = () => {
             focus:ring-indigo-200
             focus:ring-opacity-50
           "
-              placeholder="Name"
+              placeholder="Full Name"
               required
             />
           </label>
@@ -117,7 +134,7 @@ const Booking = () => {
             >Chose model you would like to rent ?</span
             >
             <select
-              name="present"
+              name="model"
               class="
             block
             w-full
@@ -140,65 +157,15 @@ const Booking = () => {
           <div class="mb-6">
             <div class="mt-2">
               <div>
-                {/* <label class="inline-flex items-center">
-              <input
-                name="season"
-                type="radio"
-                class="
-                  text-indigo-600
-                  border-gray-300
-                  rounded-full
-                  shadow-sm
-                  focus:border-indigo-300
-                  focus:ring
-                  focus:ring-offset-0
-                  focus:ring-indigo-200
-                  focus:ring-opacity-50
-                "
-                checked
-              />
-              {/* <span class="ml-2">With navigation</span> 
-            </label> */}
+              
               </div>
               <div>
-                {/* <label class="inline-flex items-center">
-              <input
-                name="season"
-                type="radio"
-                class="
-                  text-indigo-600
-                  border-gray-300
-                  rounded-full
-                  shadow-sm
-                  focus:border-indigo-300
-                  focus:ring
-                  focus:ring-offset-0
-                  focus:ring-indigo-200
-                  focus:ring-opacity-50
-                "
-              />
-              <span class="ml-2">No Navigation</span>
-            </label> */}
+               
               </div>
             </div>
           </div>
           <div class="mb-6">
-            {/* <button
-          type="submit"
-          class="
-            h-12
-            px-8
-            text-indigo-100
-            bg-indigo-700
-            rounded-lg
-            transition-colors
-            duration-150
-            focus:shadow-outline
-            hover:bg-indigo-900
-          "
-        >
-          Book Your Bike Now
-        </button> */}
+           
 
             <button className='mt-8 bg-slate-400 text-black hover:bg-black/50 hover:text-white'>Reserve Motorbike</button>
           </div>

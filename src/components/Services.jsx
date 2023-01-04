@@ -52,10 +52,10 @@ const Plan = () => {
 
         </p>
         <div>
-          <button className='border-black mr-4 hover:shadow-xl'>
-            Learn More
+          <button className='border-black mr-4 hover:bg-black hover:text-white'>
+            Book Motorbike
           </button>
-          <button className='bg-black text-white border-black hover:shadow-xl'>Book Motorbike</button>
+        
         </div>
       </div>
     </div>
