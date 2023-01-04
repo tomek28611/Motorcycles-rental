@@ -50,7 +50,7 @@ const Booking = () => {
             <label class="block mb-6 mt-4">
               <span class="text-gray-700">Phone number</span>
               <input
-                name="name"
+                name="phone"
                 type="text"
                 class="
             block
@@ -73,7 +73,7 @@ const Booking = () => {
           <label class="block mb-6">
             <span class="text-gray-700">When you want rent bike?</span>
             <input
-              name="birthday"
+              name="day"
               type="date"
               class="
             block
@@ -93,7 +93,7 @@ const Booking = () => {
           <label class="block mb-6">
             <span class="text-gray-700">How many days</span>
             <input
-              name="name"
+              name="days"
               type="text"
               class="
             block

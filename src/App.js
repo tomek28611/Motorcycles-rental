@@ -5,7 +5,7 @@ import ImageSlider from "./components/Slider";
 import Booking from "./components/Booking";
 import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
-import Book from "./components/Book";
+import Slider from "./components/Slider2";
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
       <Booking />
       <Reviews />
       <Footer />
+    
     </div>
   );
 }
